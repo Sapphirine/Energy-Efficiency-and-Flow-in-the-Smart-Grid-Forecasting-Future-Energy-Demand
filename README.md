@@ -11,11 +11,10 @@ Commands to run in Google colab to be able to import necessary libraries for mod
 Commands to load file from Google drive:
 
 1. from google.colab import drive 
-
-drive.mount('/content/gdrive')
-2. Enter authorization code
-3. %cd '/content/gdrive/My Drive'
-4. e.g. for saved California dataset,
+2. drive.mount('/content/gdrive')
+3. Enter authorization code
+4. %cd '/content/gdrive/My Drive'
+5. e.g. for saved California dataset,
 import pandas as pd
 caisofile= 'CaisoJan19March19windsolarAvg.csv'
 caiso_dataset = pd.read_csv(caisofile)
