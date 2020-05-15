@@ -6,6 +6,14 @@ from scipy.stats import linregress
 
 df1 = caiso_dataset # set dataframe 
 
+# calculate rolling mean
+arr = df1['iso']
+s = pd.Series(arr)
+
+rollingwindow = 3 # input: window length of rolling mean
+
+df1['rolling_mean'] = s.rolling(rollingwindow).mean()
+
 # create trend 
 trend_interval = 10
 
@@ -38,9 +46,9 @@ for ind in df1.index:
     plot_trend.extend(temp_plot_trend)
     temp_plot_trend=[]
     temp_trend= []
-    temp_trend.append(df1['iso'][ind]) # change 'val' to 'iso' 
+    temp_trend.append(df1['rolling_mean'][ind]) # 'iso' or rolling mean 
     continue
-  temp_trend.append(df1['iso'][ind])
+  temp_trend.append(df1['rolling_mean'][ind])
   div_by_trend = div_by_trend+1
   
 # also add for the last set of values
