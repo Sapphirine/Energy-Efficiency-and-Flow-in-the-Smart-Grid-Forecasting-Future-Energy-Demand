@@ -14,9 +14,9 @@ Commands to load file from Google drive:
 2. drive.mount('/content/gdrive')
 3. Enter authorization code
 4. %cd '/content/gdrive/My Drive'
-5. e.g. for saved California dataset,
-import pandas as pd
-caisofile= 'CaisoJan19March19windsolarAvg.csv'
+5. e.g. for saved California dataset, \\
+import pandas as pd \\
+caisofile= 'CaisoJan19March19windsolarAvg.csv' \\
 caiso_dataset = pd.read_csv(caisofile)
 
 
