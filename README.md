@@ -10,7 +10,8 @@ Commands to run in Google colab to be able to import necessary libraries for mod
 
 Commands to load file from Google drive:
 
-1. from google.colab import drive
+1. from google.colab import drive 
+
 drive.mount('/content/gdrive')
 2. Enter authorization code
 3. %cd '/content/gdrive/My Drive'
