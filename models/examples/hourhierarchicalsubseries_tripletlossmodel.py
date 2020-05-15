@@ -10,6 +10,9 @@ import pandas as pd
 newengland = 'NewEnglandNov19WindSolar.csv'
 neweng_dataset = pd.read_csv(newengland)
 
+# rename values column to iso
+neweng_dataset =neweng_dataset.rename(columns={"ws_forecast (sum) (california_iso)": "iso"})
+
 # normalize
 
 normalized_neweng = neweng_dataset
