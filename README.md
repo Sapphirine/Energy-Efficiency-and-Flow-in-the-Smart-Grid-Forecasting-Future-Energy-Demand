@@ -33,3 +33,15 @@ Commands to run the demo dashboard app:
 7. Save the app by running %%writefile my_app7.py where the code of the app is in the same cell
 8. !python my_app7.py 
 9. Open new tab and paste link from step 6. 
+
+
+Short summary of python notebooks:
+
+- LSTM_with_covariates.ipynb contains the keras-based LSTM models and experiments
+
+- data_preprocessing_replearning.ipynb	contains data preprocessing techniques on 1 minute electricity data in nyc 
+
+- deep_learning_gluon2.ipynb contains the gluonts-based deep learning models and experiments
+
+- visualizations_deep_learning_gluon.ipynb contain visualizations and apps
+
