@@ -9,10 +9,11 @@ It is also possible to choose region
 - New England
 
 Also, you can check boxes for visualizing
--early morning
--morning
--afternoon
--evening
+
+- early morning
+- morning
+- afternoon
+- evening
 
 In update_trend_graph, the trend is default showing the series at indices 1 to 30 in the return dcc.Graph line. Please change the indices to the desired indices where you want to view the trend.
 
