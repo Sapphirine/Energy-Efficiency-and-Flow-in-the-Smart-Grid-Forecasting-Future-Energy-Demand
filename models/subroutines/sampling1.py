@@ -1,4 +1,4 @@
-# orig sampling method from unsupervised rep learning
+# orig sampling method from unsupervised scalable rep. learning paper
 def sampling1(y, N, K): # sequence y_i for i in 1 to N
   # size of y
   for i in range(1,N):
